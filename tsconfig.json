@@ -1,0 +1,30 @@
+{
+  "compilerOptions": {
+    "target": "es5", // 자바스크립트 버전
+    "lib": [ // window.alert 같은 거 type check할 건지
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
+    "allowJs": true, // 자바스크립트 혼용 가능 여부
+    "skipLibCheck": true, // 다운로드 받은 것(다른 사람들이 만든 것)까지 체크 여부
+    "strict": true,
+    "forceConsistentCasingInFileNames": true, // 파일 이름 대소문자 구분 무시 여부
+    "noEmit": true, // 타입스크립트로 된 파일을 자바스크립트 파일로 변경할 때 변경한 파일들을 생성하진 않고 실행만 시킬지 여부
+    "incremental": true,
+    "esModuleInterop": true,
+    "module": "esnext", // 최신 버전 자바스크립트이므로 import 사용하므로 module 방식이라고 하지만 구 버전에서는 require()라는 명령을 통해 불러오는 방식을 commonjs 방식이라고 함
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve"
+  },
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
+}
